@@ -11,3 +11,6 @@ for _ in range(6000):
 		numbers[a_dig] += 1
 
 print(numbers)
+
+f = open('test.txt', 'a')
+f.write(str(numbers) + '\n')
