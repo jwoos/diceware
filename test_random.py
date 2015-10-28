@@ -1,7 +1,13 @@
-import sys
-import os
+from random import SystemRandom
 
-numbers = []
+numbers = {}
 
-for _ in range(100000):
-	ord(os.urandom(1))
+for _ in range(6000):
+	random_dig = SystemRandom()
+	a_dig = random_dig.randrange(1, 7)
+	if a_dig not in numbers:
+		numbers[a_dig] = 0
+	elif a_dig in numbers:
+		numbers[a_dig] += 1
+
+print(numbers)
