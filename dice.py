@@ -26,4 +26,9 @@ for x in a:
 		the_dict[y[0]] = y[1]
 
 for dig in digits:
+	print(dig, end ='\t')
+print('')
+
+for dig in digits:
 	print(the_dict[str(dig)], end='\t')
+print('')
